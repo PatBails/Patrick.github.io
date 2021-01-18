@@ -1,0 +1,16 @@
+body {
+    background-color: wheat;
+}
+
+h1 {
+    color: darkorchid;
+}
+
+a {
+    color: black;
+    font-style: normal;
+}
+
+a:hover {
+    color: orchid;
+}
