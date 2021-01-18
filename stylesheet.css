@@ -1,17 +1,45 @@
 body {
     background-color: wheat;
-    margin: auto;
+    margin: 0px;
+    font-family: monospace;
+
+}
+
+header {
+    position: relative;
+}
+
+.h1-background {
+    background-color: gray;
+    position: relative;
 }
 
 h1 {
     color: darkorchid;
+    margin: 0px;
+    padding: 100px 0px 100px 0px;
+    text-align: center;
+    font-size: 50px;
+}
+
+nav {
+    background-color: lightgray;
+    padding: 20px 0px 20px 0px;
+}
+
+main {
+    position: relative;
 }
 
 a {
     color: black;
     font-style: normal;
+    padding: 20px;
+    font-size: 25px;
 }
 
 a:hover {
     color: orchid;
+    background-color: black;
+    padding: 20px;
 }
