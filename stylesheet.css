@@ -1,3 +1,8 @@
+:root {
+    --salmon: #ff887d;
+    --black: #272727;
+}
+
 body {
     margin: 0px;
     font-family: monospace;
@@ -9,12 +14,12 @@ header {
 .h1-background {
     display: flex;
     justify-content:flex-start;
-    background-color: #ff887d;
+    background-color: var(--salmon);
     padding: 0px 0px 0px 100px;
 }
 
 .h1-text{
-    color: black;
+    color: var(--black);
     margin: 0px;
     padding: 70px 0px 70px 0px;
     text-align: center;
@@ -40,7 +45,7 @@ nav {
 }
 
 nav a {
-    color: black;
+    color: var(--black);
     text-decoration: none;
     padding: 30px 50px 30px 50px;
     font-size: 30px;
@@ -48,7 +53,7 @@ nav a {
 
 nav a:hover {
     transition: .4s;
-    color: #ff887d;
+    color: var(--salmon);
     background-color: rgb(78, 78, 78);
     padding: 30px 50px 30px 50px;
     font-weight: bold;
@@ -66,13 +71,13 @@ main {
 }
 
 .content {
-    padding: 80px 150px 50px 150px;
+    padding: 80px 100px 50px 100px;
     display: flex;
     flex-direction: column;
 }
 
 .content-article {
-    background-color: #ff887d;
+    background-color: var(--salmon);
     margin: 0px 0px 20px 0px;
     height: 35vh;
     padding: 30px 20px 20px 20px;
@@ -94,7 +99,7 @@ main {
 
 footer {
     background-color: darkgray;
-    color: black;
+    color: var(--black);
     text-align: center;
     padding: 10px;
     font-size: 20px;
