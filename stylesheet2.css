@@ -28,7 +28,7 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: 1000px;
+    min-height: 101vh;
     background-color: #272727;
     color: white;
     margin-bottom: 20px;
@@ -71,7 +71,7 @@ body {
 
 main {
     margin: 10px;
-    min-height: 100vh;
+    min-height: 101vh;
 }
 
 .item {
@@ -138,7 +138,7 @@ main {
     align-items: center;
     background-color: #272727;
     color: white;
-    min-height: 100px;
+    min-height: 10vh;
 }
 
 .footer-item {
