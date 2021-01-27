@@ -1,0 +1,148 @@
+:root {
+    --yellow: #ffc600;
+    --black: #272727;
+}
+
+html {
+    /* Border-box box model allows us to add padding and borders to 
+    our elements without increasing their size */
+    box-sizing: border-box;
+    color: var(--black);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    background-image: linear-gradient(110deg, #f93d66, #6d47d9);
+    background-attachment: fixed;
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 1000px;
+    background-color: #272727;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.header-item {
+    text-align: center;
+}
+
+.header-item-title{
+    margin: 0px 10px;
+}
+
+.header-item-quote {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.header-item-link{
+    text-decoration: none;
+    font-weight: 100;
+    margin: 30px 0px;
+}
+
+.header-item-link a{
+    text-decoration: none;
+    font-weight: 100;
+    color: black;
+    background-color:darkgray;
+    border: 10px solid darkgray;
+    border-radius: 20px;
+}
+
+.header-item-link a:hover{
+    color: white;
+    background-color: gray;
+    border: 10px solid gray;
+    border-radius: 20px;
+}
+
+main {
+    margin: 10px;
+    min-height: 100vh;
+}
+
+.item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    font-size: 35px;
+    background-color: #ffc600; 
+}
+
+.item p {
+    margin: 0 0 5px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-gap: 20px;
+}
+
+.flexbox-container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; /* Aligns items vertically and the items stay at their original size */
+}
+
+.flexbox-item {
+    background-color: #dfdfdf;
+    border: 3px solid #333;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.flexbox-item-text {
+    text-align: center;
+}
+
+.flexbox-item p{
+    display: inline;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.flexbox-item-1 {
+    min-height: 100px;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+    color: white;
+    min-height: 100px;
+}
+
+.footer-item {
+    text-align: center;
+    margin: 0px 10px;
+    font-style: italic;
+}
