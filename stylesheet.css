@@ -9,8 +9,13 @@ html {
 
 body {
     margin: 0px;
+    padding: 0px;
     font-family: monospace;
 }
+
+
+
+/*  Main Header Begins */
 
 .main-header {
     color: var(--black);
@@ -21,26 +26,49 @@ body {
     flex-direction: column;
     justify-content:center;
     align-content: space-around;
-    text-align: center;
-    flex-wrap: wrap;
+    text-align: center; 
+    flex-wrap: wrap; 
     background-color: var(--salmon);
     min-height: 101vh;
 }
 
 .main-header-description{
-    margin-bottom: 25vh;;
+    
 }
 
 .main-header-description h1 {
     margin: 0 20px;
     font-size: 9em;
-    
+    text-align: center;    
 }
 
 .main-header-description p {
     margin: 0 45px;
     font-size: 4em;
 }
+
+.main-header-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    font-size: 35px;
+    
+}
+
+.main-header-links a{
+    margin: 20px 20px;
+    color:  var(--black);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Main Header Ends */
+
+
+
+/* Main Nav Begins */
 
 .main-nav {
     position:sticky;
@@ -68,6 +96,12 @@ body {
     padding: 30px 50px 30px 50px;
     font-weight: bold;
 }
+
+/* Main Nav Ends */
+
+
+
+/* Main Begins */
 
 main {
 
@@ -97,6 +131,12 @@ main {
     font-size: 30px;
     margin: 0px;
 }
+
+/* Main Ends */
+
+
+
+/* Footer */
 
 footer {
     background-color: darkgray;
