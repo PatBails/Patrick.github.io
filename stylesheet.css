@@ -3,55 +3,65 @@
     --black: #272727;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
     font-family: monospace;
 }
 
-header {
-}
-
-.h1-background {
-    display: flex;
-    justify-content:flex-start;
-    background-color: var(--salmon);
-    padding: 0px 0px 0px 100px;
-}
-
-.h1-text{
+.main-header {
     color: var(--black);
-    margin: 0px;
-    padding: 70px 0px 70px 0px;
+}
+
+.main-header-background {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: space-around;
     text-align: center;
-    font-size: 40px;
-    font-family: monospace;
+    flex-wrap: wrap;
+    background-color: var(--salmon);
+    min-height: 101vh;
 }
 
-.h1-text h1 {
-    margin: 0px;
+.main-header-description{
+    margin-bottom: 25vh;;
 }
 
-.h1-text p {
-    margin: 0px;
-    text-align: left;
-    font-size: 45px;
+.main-header-description h1 {
+    margin: 0 20px;
+    font-size: 9em;
+    
 }
 
-nav {
+.main-header-description p {
+    margin: 0 45px;
+    font-size: 4em;
+}
+
+.main-nav {
+    position:sticky;
+    top: 0px;
+}
+
+.main-nav-flexbox {
     background-color: rgb(148, 148, 148);
     display: flex;
-    justify-content: flex-start;
-    padding: 0px 0px 0px 100px;
+    justify-content: center;
+    align-items: center;
 }
 
-nav a {
+.main-nav-flexbox a {
     color: var(--black);
     text-decoration: none;
     padding: 30px 50px 30px 50px;
     font-size: 30px;
 }
 
-nav a:hover {
+.main-nav-flexbox a:hover {
     transition: .4s;
     color: var(--salmon);
     background-color: rgb(78, 78, 78);
@@ -60,14 +70,14 @@ nav a:hover {
 }
 
 main {
-    position: relative;
-    height: 150vh;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 
 .content-container {
-    flex: 70%;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .content {
@@ -86,15 +96,6 @@ main {
 .content-article h2 {
     font-size: 30px;
     margin: 0px;
-}
-
-.sidebar {
-    background-color: lightgray;
-    flex: 30%;
-}
-
-.sidebar p {
-    padding: 0px 0px 0px 15px;
 }
 
 footer {
