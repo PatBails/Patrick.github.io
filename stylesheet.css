@@ -5,11 +5,11 @@
 
 html {
     box-sizing: border-box;
+
 }
 
 body {
     margin: 0px;
-    padding: 0px;
     font-family: monospace;
 }
 
@@ -17,48 +17,40 @@ body {
 
 /*  Main Header Begins */
 
-.main-header {
+.header-container {
     color: var(--black);
-}
-
-.main-header-background {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content:center;
-    align-content: space-around;
-    text-align: center; 
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     background-color: var(--salmon);
     min-height: 101vh;
+    max-height: 101vh;
+    margin: 0px;
 }
 
-.main-header-description{
-    
+.header-item-title h1{
+    margin: 0px;
+    font-size: 7vw;
 }
 
-.main-header-description h1 {
-    margin: 0 20px;
-    font-size: 9em;
-    text-align: center;    
+.header-item-description p{
+    margin: 0px;
+    font-size: 3vw;
 }
 
-.main-header-description p {
-    margin: 0 45px;
-    font-size: 4em;
-}
-
-.main-header-links {
-    display: flex;
+.header-item-links {
+    display:flex;
     flex-direction: row;
-    justify-content: center;
-    align-items:center;
-    flex-wrap: wrap;
-    font-size: 35px;
-    
+    justify-content: space-between;
+    align-self: space-between;
+    max-width: auto;
 }
 
-.main-header-links a{
-    margin: 20px 20px;
+.header-item-links a{
+    margin: 2vw;
+    font-size: 3vw;
     color:  var(--black);
     text-decoration: none;
     font-weight: bolder;
@@ -80,20 +72,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .main-nav-flexbox a {
     color: var(--black);
     text-decoration: none;
-    padding: 30px 50px 30px 50px;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 3vw;
 }
 
 .main-nav-flexbox a:hover {
     transition: .4s;
     color: var(--salmon);
     background-color: rgb(78, 78, 78);
-    padding: 30px 50px 30px 50px;
+    padding: 20px;
     font-weight: bold;
 }
 
@@ -108,27 +102,31 @@ main {
 }
 
 .content-container {
-    min-height: 150vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
+    
 }
 
 .content {
-    padding: 80px 100px 50px 100px;
-    display: flex;
-    flex-direction: column;
 }
 
 .content-article {
+    margin: 20px 0;
     background-color: var(--salmon);
-    margin: 0px 0px 20px 0px;
-    height: 35vh;
-    padding: 30px 20px 20px 20px;
+    max-height: 10vh;
+    padding: 20px 20px 20px 20px;
 }
 
 .content-article h2 {
-    font-size: 30px;
+    font-size: 2.5vw;
+    margin: 0px;
+}
+
+.content-article p {
+    font-size: 2vw;
     margin: 0px;
 }
 
@@ -143,5 +141,5 @@ footer {
     color: var(--black);
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 2vw;
 }
