@@ -21,12 +21,12 @@ body {
     color: var(--black);
     display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: var(--salmon);
-    min-height: 101vh;
-    max-height: 101vh;
+    min-height: 100vh;
     margin: 0px;
 }
 
