@@ -3,17 +3,20 @@
     --black: #272727;
 }
 
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0px;
+  }
+
 html {
-    box-sizing: border-box;
 
 }
 
 body {
-    margin: 0px;
     font-family: monospace;
 }
-
-
 
 /*  Main Header Begins */
 
@@ -21,39 +24,69 @@ body {
     color: var(--black);
     display: flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-align: center;
     background-color: var(--salmon);
     min-height: 100vh;
-    margin: 0px;
 }
 
 .header-item-title h1{
-    margin: 0px;
-    font-size: 7vw;
+    font-size: 15vw;
+    width: 70%;
+    margin:auto;
 }
 
 .header-item-description p{
-    margin: 20px;
-    font-size: 3vw;
+    font-size: 6vw;
+    width: 50%;
+    margin: auto;
 }
 
 .header-item-links {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-self: space-between;
-    max-width: auto;
+    width: 50%;
+    margin: auto;
 }
 
-.header-item-links a{
-    margin: 0 2vw;
-    font-size: 3vw;
-    color:  var(--black);
+.header-item-links a {
     text-decoration: none;
-    font-weight: bolder;
+}
+
+.header-item-links svg{
+    width: 20vw;
+    height: 20vw;
+    margin: 20px;
+}
+
+/* Desktop / Tablet viewport*/
+
+@media only screen and (min-width: 650px)
+{   
+
+    .header-item-title h1{
+        font-size: 120px;
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+    }
+
+    .header-item-description p {
+        font-size: 60px;
+        width: 100%;
+        margin: auto;
+        padding: 37px;
+    }
+
+    .header-item-links {
+        width: 100%;
+        margin: auto;
+    }
+
+    .header-item-links svg {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 /* Main Header Ends */
@@ -104,24 +137,21 @@ main {
 .content-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    
-}
-
-.content {
+    justify-content:space-evenly;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .content-article {
-    margin: 20px 0;
     background-color: var(--salmon);
-    max-height: 10vh;
-    padding: 20px 20px 20px 20px;
+    width: 50%;
+    height: 20vh;
+    padding: 20px;
+    text-align: center;
 }
 
 .content-article h2 {
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin: 0px;
 }
 
@@ -143,3 +173,4 @@ footer {
     padding: 10px;
     font-size: 2vw;
 }
+
