@@ -1,0 +1,29 @@
+/* Desktop / Tablet viewport*/
+
+@media only screen and (min-width: 650px)
+{   
+
+    .header-item-title h1{
+        font-size: 120px;
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+    }
+
+    .header-item-description p {
+        font-size: 60px;
+        width: 100%;
+        margin: auto;
+        padding: 37px;
+    }
+
+    .header-item-links {
+        width: 100%;
+        margin: auto;
+    }
+
+    .header-item-links svg {
+        width: 150px;
+        height: 150px;
+    }
+}

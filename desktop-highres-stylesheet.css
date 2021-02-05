@@ -1,0 +1,6 @@
+/* High Resolution viewport (used for displays with a width bigger than 1440px, but is also intended for 4k displays)*/
+
+@media only screen and (min-width: 1440px) 
+{
+
+}
