@@ -30,7 +30,7 @@ body {
     text-align: center;
     background-color: var(--salmon);
     min-height: 100vh;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 1px 1px 3px black;
 }
 
 .header-item-title h1{
@@ -43,6 +43,7 @@ body {
     font-size: 6vw;
     width: 50%;
     margin: auto;
+    text-shadow: 1px 1px 3px black;
 }
 
 .header-item-links {
