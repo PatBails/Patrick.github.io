@@ -30,7 +30,7 @@ body {
     text-align: center;
     background-color: var(--salmon);
     min-height: 100vh;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 2px black;
 }
 
 .header-item-title h1{
@@ -43,7 +43,7 @@ body {
     font-size: 6vw;
     width: 50%;
     margin: auto;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 2px black;
 }
 
 .header-item-links {
@@ -55,10 +55,25 @@ body {
     text-decoration: none;
 }
 
+.svg-container {
+    background-color: white;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    box-sizing: border-box;
+}
+
 .header-item-links svg{
+    
     width: 20vw;
     height: 20vw;
     margin: 20px;
+
+}
+.header-item-links svg:hover{
 }
 
 
